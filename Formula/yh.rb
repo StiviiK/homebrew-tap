@@ -1,4 +1,4 @@
-class Azctx < Formula
+class Yh < Formula
   desc "A dummy YAML syntax highlighter that brings colours where only jq could."
   homepage "https://github.com/andreazorzetto/yh"
   url "https://github.com/andreazorzetto/yh/releases/download/v0.2.1/yh-osx-amd64.zip"
