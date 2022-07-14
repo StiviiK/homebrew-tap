@@ -5,21 +5,21 @@
 class Azctx < Formula
   desc "Switch faster between subscriptions in your azure cli."
   homepage "https://githubs.com/StiviiK/azctx"
-  version "1.0-beta5"
+  version "1.0-beta6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta5/azctx_darwin_amd64.zip"
-      sha256 "d4dc0538ea9ed6ef84ca80ea087ca0bd352099f251b619773612c73d7adbd033"
+      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta6/azctx_darwin_amd64.zip"
+      sha256 "013f6f1bb8f5804bfa6503c478d1580b8a77e344eadad94d99e40cd52c6f574c"
 
       def install
         bin.install "azctx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta5/azctx_darwin_arm64.zip"
-      sha256 "9cf67f5784c18dc0a1a08268f7aed6895857692bc5c98256fb88cd494ee51c86"
+      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta6/azctx_darwin_arm64.zip"
+      sha256 "d65bcc0667ccbeca831e1fefe463083e6d2e5d12adc36785511b689ebf8a437c"
 
       def install
         bin.install "azctx"
@@ -29,24 +29,24 @@ class Azctx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta5/azctx_linux_armv6.zip"
-      sha256 "83464da1c084c23fbd5890f966820145db364cfe052f77d5bf5a9a69129a7c46"
+      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta6/azctx_linux_armv6.zip"
+      sha256 "859e50d8b0c57d394f593080415042b7596ae5f3d5adefa2f667898eb0d5697d"
 
       def install
         bin.install "azctx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta5/azctx_linux_amd64.zip"
-      sha256 "b27d2ac8645c1c70725c76b27ca6c2422bbfa647bdc312920c227ebc4326180a"
+      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta6/azctx_linux_amd64.zip"
+      sha256 "85a0a5898bf2843cacff9c9f32f814d9255253282cb3973951bb24aa03cfeb7e"
 
       def install
         bin.install "azctx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta5/azctx_linux_arm64.zip"
-      sha256 "50dd843e854b46581f2bc49a7ff72a7540dd18bd55a8ffdc3798e3079cd194b6"
+      url "https://github.com/StiviiK/azctx/releases/download/v1.0-beta6/azctx_linux_arm64.zip"
+      sha256 "df97eb2fda6d0b79eb051d04f82769177090b31d23ec274446dbc277d06f061f"
 
       def install
         bin.install "azctx"
